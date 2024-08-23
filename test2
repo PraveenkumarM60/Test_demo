@@ -1,0 +1,21 @@
+tage:1
+		
+	FROM: golang
+	
+set the working directtory inside containers
+  useradd -m ratakar
+   User ratakar
+  
+	WORKDIR /home/ratakar/app
+	 copy source code into the containers
+	COPY ..
+	install packages
+	RUN install npm
+	
+	complile the application
+	
+	Run go build -0 npm pacakge
+	
+	stage:2
+	
+	FROM Alphine:3.18
